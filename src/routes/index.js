@@ -5,7 +5,7 @@ import editoras from './editorasRoutes.js';
 import usuarios from './usuariosRoutes.js';
 import auth from './authRoutes.js';
 import livrosImagens from './livrosImagensRoutes.js';
-import aluguelLivro from './aluguelLivroRoutes.js'
+import aluguelLivro from './aluguelLivroRoutes.js';
 
 const routes = (app) => {
   app.route('/').get((_, res) => {

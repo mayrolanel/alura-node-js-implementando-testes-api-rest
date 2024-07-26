@@ -1,4 +1,4 @@
-import LivrosService from "../services/livrosService.js";
+import LivrosService from '../services/livrosService.js';
 
 const livrosService = new LivrosService();
 class LivrosController {

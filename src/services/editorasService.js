@@ -9,7 +9,7 @@ class EditorasService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 
   async listarEditoraPorId(id) {
     try {
@@ -19,12 +19,12 @@ class EditorasService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 
   async cadastrarEditora(body) {
     try {
       const editora = new Editora(body);
-      
+
       if (Object.keys(body).length === 0) {
         throw new Error('corpo da requisicao vazio');
       }
@@ -38,7 +38,7 @@ class EditorasService {
       }
       throw new Error(err.message);
     }
-  };
+  }
 
   async atualizarEditora(id, body) {
     try {
@@ -50,7 +50,7 @@ class EditorasService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 
   async excluirEditora(id) {
     try {
@@ -60,7 +60,7 @@ class EditorasService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 
   async listarLivrosPorEditora(id) {
     try {
@@ -71,7 +71,7 @@ class EditorasService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 }
 
 export default EditorasService;

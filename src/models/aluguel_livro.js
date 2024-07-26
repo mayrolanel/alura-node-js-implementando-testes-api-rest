@@ -10,7 +10,7 @@ class AluguelLivro {
     dias_alugados,
     alugado,
     created_at,
-    updated_at
+    updated_at,
   }) {
     this.id = null || id;
     this.livro_id = livro_id;
