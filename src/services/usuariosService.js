@@ -10,7 +10,7 @@ class UsuariosService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 
   async listarUsuarioPorId(id) {
     try {
@@ -20,7 +20,7 @@ class UsuariosService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 
   async atualizarUsuario(id, body) {
     try {
@@ -33,17 +33,17 @@ class UsuariosService {
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 
   async excluirUsuario(id) {
     try {
       await Usuario.excluir(id);
-      
+
       return { message: 'usuario excluído' };
     } catch (err) {
       throw new Error(err.message);
     }
-  };
+  }
 }
 
 export default UsuariosService;

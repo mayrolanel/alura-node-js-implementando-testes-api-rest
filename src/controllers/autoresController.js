@@ -1,4 +1,4 @@
-import AutoresService from "../services/autoresService.js";
+import AutoresService from '../services/autoresService.js';
 
 const autoresService = new AutoresService();
 class AutoresController {
