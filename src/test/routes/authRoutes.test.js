@@ -14,7 +14,7 @@ describe('Login', () => {
 
   it('deve obrigar o campo senha', async () => {
     const data = {
-        email: 'raphael@teste.com.br',
+      email: 'raphael@teste.com.br',
     };
 
     const response = await request(servidor).post('/login').send(data);
@@ -25,8 +25,8 @@ describe('Login', () => {
 
   it('deve alerta quando usuario nao cadastrado', async () => {
     const data = {
-        email: 'inexistente@teste.com.br',
-        senha: '123456',
+      email: 'inexistente@teste.com.br',
+      senha: '123456',
     };
 
     const response = await request(servidor).post('/login').send(data);
@@ -37,8 +37,8 @@ describe('Login', () => {
 
   it('deve alerta quando e senha invalida', async () => {
     const data = {
-        email: 'raphael@teste.com.br',
-        senha: '12345',
+      email: 'raphael@teste.com.br',
+      senha: '12345',
     };
 
     const response = await request(servidor).post('/login').send(data);
@@ -49,8 +49,8 @@ describe('Login', () => {
 
   it('deve fazer login e exibir o acessToken', async () => {
     const data = {
-        email: 'raphael@teste.com.br',
-        senha: '123456',
+      email: 'raphael@teste.com.br',
+      senha: '123456',
     };
 
     const response = await request(servidor).post('/login').send(data);
@@ -63,5 +63,4 @@ describe('Login', () => {
   afterEach(() => {
     servidor.close();
   });
-
 });

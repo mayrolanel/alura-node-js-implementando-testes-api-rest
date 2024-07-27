@@ -14,6 +14,7 @@
     "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --coverage",
     "test:auth:service": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/services/authService.test.js",
     "test:auth:route": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/routes/authRoutes.test.js",
+    "test:db:config": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/db/dbConfig.test.js",
     "eslint": "npx eslint .",
     "eslint:fix": "npx eslint --fix ."
   },
