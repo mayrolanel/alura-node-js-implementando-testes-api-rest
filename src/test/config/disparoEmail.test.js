@@ -28,6 +28,6 @@ describe('Disparo Email', () => {
 
     const validaConexao = await verificarConexao();
 
-    expect(validaConexao).toStrictEqual(estarConectado)
+    expect(validaConexao).toStrictEqual(estarConectado);
   });
 });

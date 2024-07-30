@@ -17,6 +17,7 @@
     "test:db:config": "node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/db/dbConfig.test.js",
     "test:image.book":"node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/services/livrosImagensService.test.js",
     "test:email":"node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/config/disparoEmail.test.js",
+    "test:aluguel:livro":"node --experimental-vm-modules node_modules/jest/bin/jest.js --testPathPattern=src/test/services/aluguelLivroService.test.js",
     "eslint": "npx eslint .",
     "eslint:fix": "npx eslint --fix ."
   },
